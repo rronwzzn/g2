@@ -4,7 +4,7 @@ async function searchData() {
   const data = await response.text();
 
   const rows = data.split("\n").slice(1);
-  const resultsDiv = document.getElementById("search");
+  const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = "";
 
   let found = false;
